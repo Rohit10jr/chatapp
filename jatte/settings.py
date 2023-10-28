@@ -33,6 +33,12 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/chat-admin/'
 LOGOUT_REDIRECT_URL = '/'
 
+CAHNEL_LAYERS = {
+    'dafault':{
+        'BACKEND':'channels.layers.InMemoryChannelLayer',
+    }
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account',
     'core',
+    'chat',
 ]
 
 MIDDLEWARE = [
