@@ -1,7 +1,7 @@
 from django.db import models
+from account.models import User
 
 # Create your models here.
-from account.models import User
 
 class Message(models.Model):
     body = models.TextField()
@@ -31,7 +31,7 @@ class Room(models.Model):
     agent = models.ForeignKey(User, related_name='rooms', blank=True, null=True, on_delete=models.SET_NULL)
     messages = models.ManyToManyField(Message, blank=True)
     url = models.CharField(max_length=255, blank=True, null=True)
-    status= models.CharField(max_length=20, choices=CHOICES_STATUS, default=WAITING)
+    status = models.CharField(max_length=20, choices=CHOICES_STATUS, default=WAITING)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
