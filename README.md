@@ -1,7 +1,4 @@
-# chatrooms
-chatrooms
-
-# Django Chatrooms Project
+# Django FullChat Project
 
 ![Django](https://img.shields.io/badge/Django-4.x-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
@@ -43,7 +40,7 @@ Follow these steps to get your Django Chatrooms Project up and running:
 
 1. Clone the repository:
 ```
-git clone https://github.com/Rohit10jrfullchat.git
+git clone https://github.com/Rohit10jr/fullchat.git
 ```
 2. Create a virtual environment and activate it:
 ```
